@@ -1,20 +1,9 @@
-/*var http = require('http');
-http.createServer(function(req, res) {
+var express = require('express');
+var app = express();
+app.use('/', function(req, res) {
     "use strict";
-    res.writeHead(200, {
-        'Content-Type': 'text/plain'
-    });
-    res.end('Hello, World...');
-}).listen(3000);
-console.log('Server is running at http://localhost:3000/');*/
-
-var connect = require('connect');
-var app = connect();
-var helloWorld = function(req, res, next) {
-    "use strict";
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello World...');
-};
-app.use(helloWorld);
+    res.send('Hello World');
+});
 app.listen(3000);
-console.log('Server is running at http://localhost:3000/');
+console.log('Server running at http://localhost:3000/');
+module.exports = app;
