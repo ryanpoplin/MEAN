@@ -3,7 +3,11 @@
   "version": "0.0.1",
   "dependencies": {
     "express": "latest",
-    "grunt": "latest"
+    "grunt": "latest",
+    "morgan": "latest",
+    "compression": "latest",
+    "body-parser": "latest",
+    "method-override": "latest"
   },
   "description": "MEAN HACKER...",
   "main": "server.js",
