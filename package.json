@@ -7,7 +7,9 @@
     "morgan": "latest",
     "compression": "latest",
     "body-parser": "latest",
-    "method-override": "latest"
+    "method-override": "latest",
+    "express-session": "latest",
+    "ejs": "latest"
   },
   "description": "MEAN HACKER...",
   "main": "server.js",
